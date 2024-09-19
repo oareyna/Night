@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night</title>
+</head>
+<body style="background-color: blueviolet;">
+<form id="form1" style="text-align: center;">
+    <label for="nombre">Name:</label>
+    <input type="text" id="nombre">
+
+    <button type="submit">Submit</button>
+    </form>
+
+<p id="output" style="text-align: center;color:maroon;"></p>
+
+<script>
+const output = document.getElementById("output")
+const a = document.getElementById("nombre")
+const form = document.getElementById("form1")
+
+function namey(event){
+    event.preventDefault();
+    const name = a.value;
+
+    if (name.toLowerCase()=="nicholas") {
+        output.innerHTML = "The love of my life, who is amazing and perfect in every way."
+    }
+    else {
+        output.innerHTML = "Nothing compared to the love of my life."
+    }
+    
+}
+
+
+form.addEventListener('submit', namey)
+
+</script>
+</body>
+</html>
