@@ -22,7 +22,7 @@ const form = document.getElementById("form1")
 
 function namey(event){
     event.preventDefault();
-    const name = a.value;
+    const name = a.value.trim();
 
     if (name.toLowerCase()=="nicholas") {
         output.innerHTML = "The love of my life, who is amazing and perfect in every way."
